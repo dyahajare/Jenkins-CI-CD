@@ -72,9 +72,9 @@ pipeline {
     post {
         success {
             emailext(
-                to: "EMAIL_TO_PLACEHOLDER",
-                from: "EMAIL_FROM_PLACEHOLDER",
-                replyTo: "EMAIL_REPLY_PLACEHOLDER",
+                to: "hajaredya1@gmail.com",
+                from: "hajardya2003@gmail.com",
+                replyTo: "hajardya2003@gmail.com",
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 mimeType: 'text/html',
                 body: """\
@@ -87,9 +87,9 @@ pipeline {
 
         failure {
             emailext(
-                to: "EMAIL_TO_PLACEHOLDER",
-                from: "EMAIL_FROM_PLACEHOLDER",
-                replyTo: "EMAIL_REPLY_PLACEHOLDER",
+                to: "hajaredya1@gmail.com",
+                from: "hajardya2003@gmail.com",
+                replyTo: "hajardya2003@gmail.com",
                 subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 mimeType: 'text/html',
                 body: """\
